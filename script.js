@@ -9,4 +9,9 @@ window.addEventListener('load', function() {
         alert('Game Started!');
         // Add logic to start the game
     });
+
+    document.getElementById('tap-square').addEventListener('click', function() {
+        alert('Square Tapped!');
+        // Add logic for tap action
+    });
 });
