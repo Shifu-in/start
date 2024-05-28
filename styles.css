@@ -73,3 +73,25 @@ body, html {
     height: 70px;
     cursor: pointer;
 }
+
+.coin-animation {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: gold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: coinAnimation 1s forwards;
+}
+
+@keyframes coinAnimation {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(-50px);
+    }
+}
