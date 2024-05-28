@@ -33,30 +33,43 @@ body, html {
     background-color: #ffffff;
     padding: 20px;
     box-sizing: border-box;
-}
-
-#start-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-}
-
-#start-button:hover {
-    background-color: #0056b3;
+    position: relative;
 }
 
 #tap-square {
     width: 100px;
     height: 100px;
     background-color: red;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+#top-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#coin-counter {
+    font-weight: bold;
+}
+
+#bottom-bar {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-icon {
+    width: 70px;
+    height: 70px;
     cursor: pointer;
 }
